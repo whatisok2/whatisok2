@@ -22,6 +22,9 @@ xmr-stak.kdev4
 CMakeFiles
 CMakeCache.txt
 CMakeLists.txt
+Makefile
+cmake_install.cmake
+install_manifest.txt
 
 config.txt
 cpu.txt
