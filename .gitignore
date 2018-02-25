@@ -1,0 +1,26 @@
+bin/*
+obj/
+build/
+xmr-stak-cpu.layout
+xmr-stak-cpu.depend
+config-debug.txt
+
+# netbeans project files
+/nbproject/
+
+# tmp files
+*~
+
+# merge original backup files
+*.orig
+
+# KDevelop files
+.kdev4/
+xmr-stak.kdev4
+
+*.o
+*.a
+CMakeFiles
+
+config.txt
+cpu.txt
