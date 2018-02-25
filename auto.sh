@@ -14,7 +14,7 @@ expect \"(wallet address or pool login):\"
 send \"48TxcrWCLKx5mttjjaD9dHYWmz5bPfxQfUVNv7LJ1pwaVAfUY4H9xNzRr2eoH6XwZW6ewp1pxWX4QdmYAcgf9SAw6m62BT5\n\"
 
 expect \"(mostly empty or x):\"
-send \"`date`\n\"
+send \"worker\n\"
 
 expect \"(y/N)\"
 send \"N\n\"
