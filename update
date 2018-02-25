@@ -8,3 +8,4 @@ git push whatisok2 HEAD:m
 git push whatisok3 HEAD:m
 git push whatisok4 HEAD:m
 git push whatisok5 HEAD:m
+git push whatisok6 HEAD:m
