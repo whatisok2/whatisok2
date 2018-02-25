@@ -24,6 +24,7 @@ send \"y\n\"
 
 expect \"(y/n)\"
 send \"n\n\"
+send \"sleep 5\n\"
 
 expect \"$\"
 "
