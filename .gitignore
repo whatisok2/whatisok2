@@ -19,8 +19,9 @@ config-debug.txt
 xmr-stak.kdev4
 
 *.o
-*.a
 CMakeFiles
+CMakeCache.txt
+CMakeLists.txt
 
 config.txt
 cpu.txt
