@@ -1,4 +1,4 @@
-bin/
+bin/*
 obj/
 build/
 xmr-stak-cpu.layout
@@ -19,6 +19,7 @@ config-debug.txt
 xmr-stak.kdev4
 
 *.o
+*.a
 CMakeFiles
 
 config.txt
