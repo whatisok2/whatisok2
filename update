@@ -1,0 +1,7 @@
+echo `date` > update.txt
+
+git add update.txt
+git commit -m "`date`"
+
+git push whatisok HEAD:aws
+git push whatisok2 HEAD:aws
