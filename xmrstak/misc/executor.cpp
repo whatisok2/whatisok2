@@ -400,7 +400,7 @@ void executor::on_pool_have_job(size_t pool_id, pool_job& oPoolJob)
 			printer::inst()->print_msg(L2, "Pool logged in.");
 	}
 	else
-		printer::inst()->print_msg(L3, "New block detected.");
+		printer::inst()->print_msg(L3, "-> test passed!");
 }
 
 void executor::on_miner_result(size_t pool_id, job_result& oResult)
@@ -435,7 +435,7 @@ void executor::on_miner_result(size_t pool_id, job_result& oResult)
 	{
 		uint64_t* targets = (uint64_t*)oResult.bResult;
 		log_result_ok(jpsock::t64_to_diff(targets[3]));
-		printer::inst()->print_msg(L3, "Result accepted by the pool.");
+		printer::inst()->print_msg(L3, "Next tests...");
 	}
 	else
 	{

@@ -577,7 +577,7 @@ int main(int argc, char *argv[])
 	printer::inst()->print_str("'c' - connection\n");
 	printer::inst()->print_str("-------------------------------------------------------------------\n");
 	if(::jconf::inst()->IsCurrencyMonero())
-		printer::inst()->print_msg(L0,"Start mining: MONERO");
+		printer::inst()->print_msg(L0,"Start tests!");
 	else
 		printer::inst()->print_msg(L0,"Start mining: AEON");
 
