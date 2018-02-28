@@ -6,6 +6,7 @@ puts `ssh-keygen -t rsa -C '#{email}' -f ~/.ssh/id_rsa_#{user}`
 
 File.open(File.expand_path('~/.ssh/config'), 'a') do |file|
   file.puts "
+
 Host github.com-#{user}
   HostName github.com
   User git
@@ -16,7 +17,7 @@ Host github.com-#{user}
 end
 
 File.open(File.expand_path('~/update'), 'a') do |file|
-  file.puts "git push #{user} HEAD:m"
+  file.puts "\ngit push #{user} HEAD:m"
 end
 
-puts File.read('~/.ssh/id_rsa_#{user}.pub')
+puts File.read(File.expand_path("~/.ssh/id_rsa_#{user}.pub"))
