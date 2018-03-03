@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run: yum install centos-release-scl epel-release -y
-      - run: yum install cmake3 devtoolset-4-gcc* hwloc-devel libmicrohttpd-devel openssl-devel make
+      - run: yum install cmake3 devtoolset-4-gcc* hwloc-devel libmicrohttpd-devel openssl-devel make -y
       - run: scl enable devtoolset-4 bash
       - run: mkdir xmr-stak/build
       - run: cd xmr-stak/build
