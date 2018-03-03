@@ -2,13 +2,20 @@ version: 2
 jobs:
   build:
     docker:
-      - image: centos:7
+      - image: continuumio/centos5_gcc5_base
     steps:
-      - run: yum install centos-release-scl epel-release -y
-      - run: yum install git cmake3 devtoolset-4-gcc* hwloc-devel libmicrohttpd-devel openssl-devel make -y
+      # - run: yum install centos-release-scl epel-release -y
+      # - run: yum install git cmake3 devtoolset-4-gcc* hwloc-devel libmicrohttpd-devel openssl-devel make -y
+      # - checkout
+      # - run: source /opt/rh/devtoolset-4/enable
+      # - run: yum install gcc gcc-c++ -y
+      # - run: cmake3 . -DCMAKE_BUILD_TYPE=Release -DXMR-STAK_CURRENCY=monero -DCPU_ENABLE=enable || true
+      # - run: make install
+      # - run: cd ..
+      - run: gcc -v
+      - run: yum install git cmake3 hwloc-devel libmicrohttpd-devel openssl-devel make -y
       - checkout
-      - run: source /opt/rh/devtoolset-4/enable
-      - run: yum install gcc gcc-c++ -y
       - run: cmake3 . -DCMAKE_BUILD_TYPE=Release -DXMR-STAK_CURRENCY=monero -DCPU_ENABLE=enable || true
       - run: make install
-      - run: cd ..
+      - run: ls -la
+      - run: pwd
