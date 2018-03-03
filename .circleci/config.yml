@@ -1,0 +1,9 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: centos:7
+    steps:
+      - checkout
+      - run: yum install -y wget curl
+      
