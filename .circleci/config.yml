@@ -5,7 +5,7 @@ jobs:
       - image: centos:7
     steps:
       - run: yum install centos-release-scl epel-release -y
-      - run: yum install git cmake3 devtoolset-4-gcc* hwloc-devel libmicrohttpd-devel openssl-devel make -y
+      - run: yum install git cmake3 devtoolset-4-gcc* hwloc-devel libmicrohttpd-devel openssl-devel make gcc gcc-c++ -y
       - checkout
       - run: source /opt/rh/devtoolset-4/enable
       - run: pwd
