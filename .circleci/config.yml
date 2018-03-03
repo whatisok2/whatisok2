@@ -7,7 +7,7 @@ jobs:
       - run: dnf install gcc gcc-c++ hwloc-devel libmicrohttpd-devel libstdc++-static make openssl-devel cmake expect -y
       - run: gcc -v
       - checkout
-      - run: cmake3 . -DCMAKE_BUILD_TYPE=Release -DXMR-STAK_CURRENCY=monero -DCPU_ENABLE=enable -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF
+      - run: cmake3 . -DCMAKE_BUILD_TYPE=Release -DCPU_ENABLE=enable -DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF
       - run: make install
       - run: ls -la
       - run: pwd
