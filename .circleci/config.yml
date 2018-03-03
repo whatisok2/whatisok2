@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run: yum install centos-release-scl epel-release -y
       - run: yum install cmake3 devtoolset-4-gcc* hwloc-devel libmicrohttpd-devel openssl-devel make -y
-      - run: scl enable devtoolset-4 bash
+      - run: scl enable devtoolset-4 bash && exit 0
       - run: mkdir xmr-stak/build
       - run: cd xmr-stak/build
       - run: cmake3 .. -DCMAKE_BUILD_TYPE=Release -DXMR-STAK_CURRENCY=monero -DCPU_ENABLE=enable
