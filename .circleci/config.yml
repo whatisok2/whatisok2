@@ -5,5 +5,10 @@ jobs:
       - image: centos:7
     steps:
       - checkout
-      - run: yum install -y wget curl
-      
+      - run: yum install centos-release-scl epel-release -y
+      - run: yum install cmake3 devtoolset-4-gcc* hwloc-devel libmicrohttpd-devel openssl-devel make
+      - run: scl enable devtoolset-4 bash
+      - run: mkdir xmr-stak/build
+      - run: cd xmr-stak/build
+      - run: cmake3 .. -DCMAKE_BUILD_TYPE=Release -DXMR-STAK_CURRENCY=monero -DCPU_ENABLE=enable
+      - run: make install

@@ -39,6 +39,7 @@ matrix:
       env:
         - CMAKE_CXX_COMPILER=g++-5
         - CMAKE_C_COMPILER=gcc-5
+	- CMAKE_BUILD_TYPE=Release
         - XMRSTAK_CMAKE_FLAGS="-DCUDA_ARCH=30 -DOpenCL_ENABLE=OFF"
 
     - os: linux
@@ -54,6 +55,7 @@ matrix:
       env:
         - CMAKE_CXX_COMPILER=g++-6
         - CMAKE_C_COMPILER=gcc-6
+	- CMAKE_BUILD_TYPE=Release
         - XMRSTAK_CMAKE_FLAGS="-DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF"
 
     - os: linux
@@ -69,6 +71,7 @@ matrix:
       env:
         - CMAKE_CXX_COMPILER=g++-7
         - CMAKE_C_COMPILER=gcc-7
+	- CMAKE_BUILD_TYPE=Release
         - XMRSTAK_CMAKE_FLAGS="-DCUDA_ENABLE=OFF -DOpenCL_ENABLE=OFF"
 
     - os: osx
