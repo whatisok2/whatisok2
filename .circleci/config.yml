@@ -4,13 +4,12 @@ jobs:
     docker:
       - image: centos:7
     steps:
-      - checkout
       - run: yum install centos-release-scl epel-release -y
-      - run: yum install cmake3 devtoolset-4-gcc* hwloc-devel libmicrohttpd-devel openssl-devel make -y
-      # - run: scl enable devtoolset-4 bash && exit 0
+      - run: yum install git cmake3 devtoolset-4-gcc* hwloc-devel libmicrohttpd-devel openssl-devel make -y
+      - checkout
+      - run: pwd
+      - run: ls -la
       - run: source /opt/rh/devtoolset-4/enable
-      # - run: source scl_source enable devtoolset-4
-      # - run: gcc -v
       - run: mkdir build
       - run: cd build
       - run: cmake3 .. -DCMAKE_BUILD_TYPE=Release -DXMR-STAK_CURRENCY=monero -DCPU_ENABLE=enable
