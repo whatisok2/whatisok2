@@ -10,7 +10,7 @@ jobs:
       # - run: scl enable devtoolset-4 bash && exit 0
       - run: source /opt/rh/devtoolset-4/enable
       # - run: source scl_source enable devtoolset-4
-      - run: gcc -v
+      # - run: gcc -v
       - run: mkdir xmr-stak/build
       - run: cd xmr-stak/build
       - run: cmake3 .. -DCMAKE_BUILD_TYPE=Release -DXMR-STAK_CURRENCY=monero -DCPU_ENABLE=enable
