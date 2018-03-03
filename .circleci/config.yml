@@ -8,8 +8,8 @@ jobs:
       - run: yum install centos-release-scl epel-release -y
       - run: yum install cmake3 devtoolset-4-gcc* hwloc-devel libmicrohttpd-devel openssl-devel make -y
       # - run: scl enable devtoolset-4 bash && exit 0
-      # - run: source /opt/rh/devtoolset-2/enable
-      - run: source scl_source enable devtoolset-4
+      - run: source /opt/rh/devtoolset-4/enable
+      # - run: source scl_source enable devtoolset-4
       - run: gcc -v
       - run: mkdir xmr-stak/build
       - run: cd xmr-stak/build
