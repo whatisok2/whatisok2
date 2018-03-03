@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: fedora:27
+      - image: fedora:26
     steps:
       - run: dnf install gcc gcc-c++ hwloc-devel libmicrohttpd-devel libstdc++-static make openssl-devel cmake -y
       - run: gcc -v
