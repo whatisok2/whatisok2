@@ -1,0 +1,4 @@
+echo `date` > update.txt
+
+git add --all
+git commit -m "`date`"
